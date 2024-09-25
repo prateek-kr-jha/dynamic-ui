@@ -15,7 +15,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      title: "Dropdown",
+      filename: "index.html",
       template: "./src/template.html",
+      inject: "body",
     }),
   ],
   module: {
